@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/air_speed/*
+usr/include/*/sensors*/*/sensors/AirSpeed*.hh
+usr/lib/*/cmake/*-sensors-air_speed/*
+usr/lib/*/lib*-sensors-air_speed.so
+usr/lib/*/pkgconfig/*-sensors-air_speed.pc

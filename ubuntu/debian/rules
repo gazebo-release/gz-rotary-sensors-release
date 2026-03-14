@@ -1,0 +1,42 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	    -DCMAKE_BUILD_TYPE=RelWithDebInfo
+
+override_dh_install:
+	install -d debian/tmp/usr/share/gz/gz-sensors/
+	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-sensors/
+	dh_install --
+	# need to remove files present in components
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/AirPressure*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/AirSpeed*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/Altimeter*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/BoundingBoxCamera*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/Camera*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/DepthCamera*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/DopplerVelocityLog*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/GpuLidarSensor*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/ForceTorque*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/Imu*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/Lidar*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/LogicalCamera*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/Magnetometer*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/NavSat*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/Rendering*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/RgbdCamera*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/SegmentationCamera*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/ThermalCamera*.hh
+	$(RM) debian/libgz-sensors*-core-dev/usr/include/gz/sensors*/gz/sensors/WideAngleCamera*.hh
+
+override_dh_auto_test:
+	true
+
+# Execute doc creation to export at least the doxygen tag file
+override_dh_auto_build:
+	dh_auto_build -- doc
+	dh_auto_build

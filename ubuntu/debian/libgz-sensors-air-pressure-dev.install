@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/air_pressure/*
+usr/include/*/sensors*/*/sensors/AirPressure*.hh
+usr/lib/*/cmake/*-sensors-air_pressure/*
+usr/lib/*/lib*-sensors-air_pressure.so
+usr/lib/*/pkgconfig/*-sensors-air_pressure.pc

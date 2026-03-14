@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/imu/*
+usr/include/*/sensors*/*/sensors/Imu*.hh
+usr/lib/*/cmake/*-sensors-imu/*
+usr/lib/*/lib*-sensors-imu.so
+usr/lib/*/pkgconfig/*-sensors-imu.pc

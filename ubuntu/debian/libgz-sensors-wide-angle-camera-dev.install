@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/wide_angle_camera/*
+usr/include/*/sensors*/*/sensors/WideAngleCamera*.hh
+usr/lib/*/cmake/*-sensors-wide_angle_camera/*
+usr/lib/*/lib*-sensors-wide_angle_camera.so
+usr/lib/*/pkgconfig/*-sensors-wide_angle_camera.pc

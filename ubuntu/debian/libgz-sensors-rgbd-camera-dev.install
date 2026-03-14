@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/rgbd_camera/*
+usr/include/*/sensors*/*/sensors/RgbdCamera*.hh
+usr/lib/*/cmake/*-sensors-rgbd_camera/*
+usr/lib/*/lib*-sensors-rgbd_camera.so
+usr/lib/*/pkgconfig/*-sensors-rgbd_camera.pc

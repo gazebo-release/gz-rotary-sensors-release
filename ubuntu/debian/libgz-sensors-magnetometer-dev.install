@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/magnetometer/*
+usr/include/*/sensors*/*/sensors/Magnetometer*.hh
+usr/lib/*/cmake/*-sensors-magnetometer/*
+usr/lib/*/lib*-sensors-magnetometer.so
+usr/lib/*/pkgconfig/*-sensors-magnetometer.pc

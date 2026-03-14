@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/rendering/*
+usr/include/*/sensors*/*/sensors/Rendering*.hh
+usr/lib/*/cmake/*-sensors-rendering/*
+usr/lib/*/lib*-sensors-rendering.so
+usr/lib/*/pkgconfig/*-sensors-rendering.pc

@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/lidar/*
+usr/include/*/sensors*/*/sensors/Lidar*.hh
+usr/lib/*/cmake/*-sensors-lidar/*
+usr/lib/*/lib*-sensors-lidar.so
+usr/lib/*/pkgconfig/*-sensors-lidar.pc

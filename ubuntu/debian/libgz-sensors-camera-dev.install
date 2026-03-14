@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/camera/*
+usr/include/*/sensors*/*/sensors/Camera*.hh
+usr/lib/*/cmake/*-sensors-camera/*
+usr/lib/*/lib*-sensors-camera.so
+usr/lib/*/pkgconfig/*-sensors-camera.pc

@@ -1,0 +1,5 @@
+usr/include/*/sensors*/*/sensors/altimeter/*
+usr/include/*/sensors*/*/sensors/Altimeter*.hh
+usr/lib/*/cmake/*-sensors-altimeter/*
+usr/lib/*/lib*-sensors-altimeter.so
+usr/lib/*/pkgconfig/*-sensors-altimeter.pc
