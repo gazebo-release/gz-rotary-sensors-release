@@ -739,7 +739,6 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib wide-angl
  .
  Shared library for wide-angle-camera sensor
 
-
 Package: libgz-sensors-dev
 Architecture: any
 Section: libdevel
@@ -774,7 +773,7 @@ Description: Gazebo Sensors classes and functions for robot apps - Metapackage
  .
  Metapackage for all the -dev files
 
-Package: gz-rotary-sensors
+Package: libgz-rotary-sensors-dev
 Depends: libgz-sensors-dev (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
@@ -782,7 +781,7 @@ Section: metapackages
 Description: alias package
  Provides a package for Rotary without exposing the version number.
 
-Package: gz-rotary-sensors-core
+Package: libgz-rotary-sensors-core-dev
 Depends: libgz-sensors-core-dev (= ${binary:Version}), ${misc:Depends}
 Architecture: all
 Priority: optional
