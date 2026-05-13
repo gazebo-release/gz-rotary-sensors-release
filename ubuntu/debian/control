@@ -417,6 +417,44 @@ Description: Gazebo Sensors classes and functions for robot apps - Lib lidar
  .
  Shared library for lidar sensor
 
+Package: libgz-sensors-cpu-lidar-dev
+Architecture: any
+Section: libdevel
+Depends: libgz-cmake-dev,
+         libgz-common-events-dev,
+         libgz-math-dev,
+         libgz-msgs-dev,
+         libgz-transport-core-dev,
+         libgz-sensors-core-dev (= ${binary:Version}),
+         libgz-sensors-lidar-dev (= ${binary:Version}),
+         libsdformat-dev,
+         libgz-sensors-cpu-lidar (= ${binary:Version}),
+         ${misc:Depends}
+Multi-Arch: same
+Provides: libgz-sensors-cpu-lidar-dev-generic
+Conflicts: libgz-sensors-cpu-lidar-dev-generic, libgz-sensors6-cpu-lidar-dev, libgz-sensors8-cpu-lidar-dev, libgz-sensors9-cpu-lidar-dev, libgz-sensors10-cpu-lidar-dev
+Replaces: libgz-sensors6-cpu-lidar-dev, libgz-sensors8-cpu-lidar-dev, libgz-sensors9-cpu-lidar-dev, libgz-sensors10-cpu-lidar-dev
+Description: Gazebo Sensors classes and functions for robot apps - Dev files cpu-lidar
+ Gazebo Sensors is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Development files for cpu-lidar sensor
+
+Package: libgz-sensors-cpu-lidar
+Architecture: any
+Section: libs
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: same
+Provides: libgz-sensors-cpu-lidar-generic
+Conflicts: libgz-sensors-cpu-lidar-generic, libgz-sensors6-cpu-lidar, libgz-sensors8-cpu-lidar, libgz-sensors9-cpu-lidar, libgz-sensors10-cpu-lidar
+Replaces: libgz-sensors6-cpu-lidar, libgz-sensors8-cpu-lidar, libgz-sensors9-cpu-lidar, libgz-sensors10-cpu-lidar
+Description: Gazebo Sensors classes and functions for robot apps - Lib cpu-lidar
+ Gazebo Sensors is a component in the Gazebo framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Shared library for cpu-lidar sensor
+
 Package: libgz-sensors-gpu-lidar-dev
 Architecture: any
 Section: libdevel
@@ -748,6 +786,7 @@ Depends: libgz-sensors-core-dev (= ${binary:Version}),
          libgz-sensors-altimeter-dev (= ${binary:Version}),
          libgz-sensors-boundingbox-camera-dev (= ${binary:Version}),
          libgz-sensors-camera-dev (= ${binary:Version}),
+         libgz-sensors-cpu-lidar-dev (= ${binary:Version}),
          libgz-sensors-depth-camera-dev (= ${binary:Version}),
          libgz-sensors-dvl-dev (= ${binary:Version}),
          libgz-sensors-force-torque-dev (= ${binary:Version}),
